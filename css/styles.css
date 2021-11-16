@@ -1,0 +1,145 @@
+
+
+/*--Everything--*/
+*{
+    margin: 0;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*-- Header--*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+/*--Top part with placeholder--*/
+.top{
+    height: 600px;
+    display: flex;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-l{
+    width: 600px;
+}
+
+.awe{
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+.p1{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.image-place{
+    width: 200px;
+    background-color: #d3d3d3;
+    text-align: center;
+    padding: 100px;
+}
+/*--Mid with boxes--*/
+
+.mid{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 150px;
+    flex: none;
+}
+
+.info{
+    margin-top: 60px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    height: 80px;
+    aspect-ratio: 1;
+    outline: #3882F6 solid 2px;
+    border-radius: 13px;
+    border-style: none;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.text{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/*--Quote--*/
+.ture{
+    height: 600px;
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign{
+    align-self: flex-end;
+}
+
+/*--Call to action--*/
+.call{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif{
+    background-color: #3882F6;
+    height: 180px;
+    display: flex;
+    border-radius: 13px;
+  
+}
+
+.blue{
+    display: flex;
+    align-self: center;
+    gap: 100px;
+    
+}
+
+/*--Footer--*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
