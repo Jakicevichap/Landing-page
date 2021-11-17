@@ -3,119 +3,159 @@
 /*--Everything--*/
 *{
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
 }
 
 .body{
-    display: flex;
     flex-direction: column;
-    font-family: Verdana, Tahoma, sans-serif;
 }
 
 /*-- Header--*/
 .header{
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #1F2937;
     color: #E5E7EB;
+    gap: 300px;
 }
+
+.logo{
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+    padding: 20px 0 0 20px;
+
+}
+
+.header-links{
+    gap: 60px;
+    font-weight: 600;
+    padding: 20px 20px 0 0;
+}
+
 
 /*--Top part with placeholder--*/
 .top{
-    height: 600px;
-    display: flex;
     background-color: #1F2937;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 
+.mem{
+    max-height: 400px;
+    flex-wrap: nowrap;
+    gap: 60px;
+}
 .top-l{
     width: 600px;
+    padding-left: 200px;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 20px;
 }
 
 .awe{
-    font-size: 48px;
+    font-size: 52px;
     color: #f9faf8;
 }
 
 .p1{
     font-size: 18px;
     color: #E5E7EB;
+    font-weight: lighter;
 }
 
 .image-place{
     width: 200px;
-    background-color: #d3d3d3;
+    background-color: #2b3747;
     text-align: center;
-    padding: 100px;
+    padding: 130px;
+    border-radius: 16px;
+    margin-right: 200px;
+    color: #d3d3d3;
+}
+
+.but1{
+    background-color: #3882F6;
+    border-style: none;
+    width: 80px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #d3d3d3;
 }
 /*--Mid with boxes--*/
 
 .mid{
-    height: 600px;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 150px;
+    gap: 110px;
     flex: none;
 }
 
 .info{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .boxes{
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .box{
-    height: 80px;
+    height: 200px;
     aspect-ratio: 1;
     outline: #3882F6 solid 2px;
-    border-radius: 13px;
+    border-radius: 18px;
     border-style: none;
+    background-color: #ffffff;
 }
 
 .info-box{
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 .text{
     width: 250px;
-    display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
 
 /*--Quote--*/
 .ture{
-    height: 600px;
-    display: flex;
     background-color: #E5E7EB;
     justify-content: center;
     align-items: center;
 }
 
 .bot{
-    width: 500px;
-    display: flex;
+    width: 800px;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
 }
 
+.quote{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    opacity: 50%;
+}
 .sign{
     align-self: flex-end;
+    font-weight: bold;
+    color: #1F2937;
+    opacity: 80%;
 }
 
 /*--Call to action--*/
 .call{
-    height: 600px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -123,23 +163,73 @@
 .notif{
     background-color: #3882F6;
     height: 180px;
-    display: flex;
-    border-radius: 13px;
+    border-radius: 18px;
   
 }
 
 .blue{
-    display: flex;
     align-self: center;
     gap: 100px;
+    color: #f9faf8;
+    padding: 25px 100px 25px 100px;
     
+}
+.call-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.but2{
+    width: 80px;
+    height: 50px;
+    border: 2px solid #f9faf8;
+    border-radius: 14px;
+    background-color: #3882F6;
+    color: #f9faf8;
+    font-weight: 600;
 }
 
 /*--Footer--*/
 .footer{
-    display: flex;
+    height: 70px;
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
-    color: #E5E7EB;
+    color: #f9faf8;
+    font-weight: 300;
+}
+
+.footer-text{
+    opacity: 50%;
+}
+
+
+
+
+/*-- Summed up--*/
+
+.body,
+.header,
+.header-links,
+.top,
+.mem,
+.top-l,
+.mid,
+.boxes,
+.info-box,
+.text,
+.ture,
+.bot,
+.call,
+.notif,
+.blue,
+.footer{
+    display: flex;
+}
+
+.top,
+.mid,
+.ture,
+.call{
+    height: 600px;
 }
